@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Ticket</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- TOPO -->
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-logo">
+          <img src="assets/meu-ticket-logo.png" alt="Logo Meu Ticket" width="500" height="500">
+        </div>
+        <div>
+          <strong>Meu Ticket</strong>
+          <span>Ingressos e fila de entrada</span>
+        </div>
+      </div>
+
+      <div class="user">
+        <div class="user-info">
+          <strong id="nomeUsuario">Usuário</strong>
+
+        </div>
+        <div class="avatar">U</div>
+        <button class="logout-btn" id="btnLogout" type="button" aria-label="Sair da conta">Sair</button>
+      </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="layout">
+
+      <!-- MENU LATERAL -->
+      <aside class="sidebar">
+        <div class="menu-title">
+          <span>MENU</span>
+
+        </div>
+
+        <nav>
+          <button class="service-btn active" data-page="inicio">
+            <span>Início</span>
+          </button>
+
+          <button class="service-btn" data-page="ingressos">
+            <span>Ingressos</span>
+          </button>
+
+          <button class="service-btn" data-page="fila">
+            <span>Fila de entrada</span>
+          </button>
+        </nav>
+
+      </aside>
+
+      <!-- ÁREA PRINCIPAL -->
+      <div class="main-area">
+      <p id="mensagem" class="message" role="status" aria-live="polite"></p>
+      <main class="content" id="content">
+
+        <noscript>Ative o JavaScript para acessar seus ingressos.</noscript>
+
+      </main>
+      </div>
+    </div>
+  </div>
+
+  <script src="ingressos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
